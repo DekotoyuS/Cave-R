@@ -1,1 +1,3 @@
-# Cave-R
+# Cave
+
+Clicker game
