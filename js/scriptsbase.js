@@ -44,3 +44,15 @@ function atualizar_rank(){
 function atualizar_estado(){
     pegar_estado.innerHTML = "Estado Normal";
 }
+
+function save(){
+    //guardar
+    localStorage.pontos_guardar = (pontos);
+    console.log("dados salvos: " + " pontos: " + pontos)
+}
+
+function load(){
+    pontos = parseFloat(localStorage.pontos_guardar);
+    atualizar_pontos();
+    console.log("dados recuperados: " + pontos);
+}
