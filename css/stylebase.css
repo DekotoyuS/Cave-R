@@ -30,7 +30,7 @@ a{
 
 button{
     width: 150px;
-    height: 75px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,6 +43,58 @@ button{
     border-width: 2px;
     border-color: aliceblue;
     border-style: dashed;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+/*
+button:active{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.botao_decoracao{
+    border-top: 0px;
+    border-color: rgba(240, 248, 255, 0.822);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+}
+*/
+
+.mensagens_centro{
+    color: aliceblue;
+    position: fixed;
+    height: 100px;
+    top: 11; /* Altere para 0 para centralizar no topo da tela */
+    left: 50%;
+    transform: translateX(-50%); /* Para centralizar horizontalmente */
+    overflow: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.mensagens_centro::-webkit-scrollbar{
+    display: none;
+}
+
+.mensagens_centro a{
+    padding-bottom: 9px;
+}
+
+@media (max-width: 768px) {
+    .mensagens_centro {
+        height: 75px;
+        font-size: small;
+    }
+    .mensagens_centro a{
+        padding-bottom: 5px;
+    }
 }
 
 footer{
