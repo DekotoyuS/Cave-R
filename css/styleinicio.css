@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: black;
+}
+
+.botao_iniciar{
+    height: 50px;
+    width: 100px;
+    border-width: 2px;
+    border-color: aliceblue;
+    border-style: dashed;
+    text-decoration: none;
+    color: aliceblue;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
