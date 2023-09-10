@@ -12,25 +12,57 @@
             <a id="pontos"> </a>
             <a id="estado"> </a>
             <a id="rank"> </a>
+            <a> </a>
+            <a> </a>
+            <a> </a>
+            <a> </a>
+            <a> </a>
+            <a> </a>
+            <a> </a>
             <a id="horario"> </a>
+            <div class="conquistas_deco">
+                <a class="decoracao1" onclick="fechar_conquistas()">◄</a>
+
+                <a class="decoracao2" onclick="abrir_conquistas()">🏆</a>
+            </div>
         </header>
     </div>
 
-    <button onclick="acao()">Acionar</button>
+    <button onclick="acao()" id="mudar_botao">Acionar</button>
     <!-- <button class="botao_decoracao"></button> -->
 
     <div class="mensagens_centro" id="mensagens_centro"></div>
+
+    <div class="conquistas" id="conquistas">
+        <div class="conquistas_table">
+            <div class="bloco_conquista" id="conquista1"> ❔ </div>
+            <div class="bloco_conquista" id="conquista2"> ❔ </div>
+            <div class="bloco_conquista" id="conquista3"> ❔ </div>
+            <div class="bloco_conquista" id="conquista4"> ❔ </div>
+            <div class="bloco_conquista" id="conquista5"> ❔ </div>
+            <div class="bloco_conquista" id="conquista6"> ❔ </div>
+        </div>
+        <div class="conquistas_table">
+            <div class="bloco_conquista" id="conquista7"> ❔ </div>
+            <div class="bloco_conquista" id="conquista8"> ❔ </div>
+            <div class="bloco_conquista" id="conquista9"> ❔ </div>
+            <div class="bloco_conquista" id="conquista10"> ❔ </div>
+            <div class="bloco_conquista" id="conquista11"> ❔ </div>
+            <div class="bloco_conquista" id="conquista12"> ❔ </div>
+        </div>
+    </div>
 
     <div class="bordas">
         <footer>
             <div class="savegame">
                 <a onclick="save()">save</a>
-                <a onclick="load()">load</a>
-                <a onclick="reset()">reset</a>
             </div>
             <a> </a>
             <a> </a>
-            <a> </a>
+            <div class="savegame2">
+                <a onclick="load()" class="detalhe1">load</a>
+                <a onclick="reset()">reset</a>
+            </div>
         </footer>
     </div>
     <script src="./js/scriptsbase.js"></script>

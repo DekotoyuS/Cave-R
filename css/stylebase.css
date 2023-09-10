@@ -1,11 +1,15 @@
 *{
     margin: 0px;
     font-family: 'Courier New', Courier, monospace;
+    transition: 0.1s;
+    overflow: auto;
 }
 
 body{
     background-color: black;
+    overflow: hidden;
 }
+
 
 header{
     display: flex;
@@ -22,6 +26,10 @@ header{
     border-top: 2px;
     border-color: aliceblue;
     border-style: dashed;
+}
+
+.conquistas_deco{
+    overflow: visible;
 }
 
 a{
@@ -44,7 +52,7 @@ button{
     border-color: aliceblue;
     border-style: dashed;
     cursor: pointer;
-    transition: 0.1s;
+    transition: 0.5s;
 }
 
 /*
@@ -67,16 +75,57 @@ button:active{
     color: aliceblue;
     position: fixed;
     height: 100px;
-    top: 11; /* Altere para 0 para centralizar no topo da tela */
+    top: 11%; /* Altere para 0 para centralizar no topo da tela */
     left: 50%;
     transform: translateX(-50%); /* Para centralizar horizontalmente */
-    overflow: auto;
+    overflow:hidden;
     overflow-x: hidden;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    transition: 0.5s;
+}
+
+.mensagens_centro a{ 
+    height: 50px;
+}
+
+.detalhe1{
+    background-color: transparent;
+    color: aliceblue;
+    padding-right: 12px;
+    border-width: 0px;
+    border-right: 2px;
+    border-color: aliceblue;
+    border-style: dashed;
+}
+
+.decoracao{
+    padding: 10px;
+    background-color: transparent;
+    color: aliceblue;
+    border-width: 1.5px;
+    border-color: aliceblue;
+    border-style: dashed;
+    cursor: pointer;
+}
+
+.decoracao2{
+    cursor: pointer;
+}
+
+.decoracao1{
+    background-color: transparent;
+    color: aliceblue;
+    padding: 15px;
+    border-width: 0px;
+    border-right: 2px;
+    border-color: aliceblue;
+    border-style: dashed;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 .mensagens_centro::-webkit-scrollbar{
@@ -94,6 +143,69 @@ button:active{
     }
     .mensagens_centro a{
         padding-bottom: 5px;
+    }
+}
+
+.savegame2{
+    padding-right: 75px;
+}
+
+@media (max-width: 768px) {
+    .savegame2{
+        padding-right: 25px;
+    }
+}
+
+.conquistas{
+    height: 70vh;
+    overflow: auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    transition: 0.5s;
+    left: 50%;
+    transform: translateX(150%);
+}
+
+.conquistas::-webkit-scrollbar{
+    display: none;
+}
+
+.conquistas_table{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+.bloco_conquista{
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    background-color: transparent;
+    color: aliceblue;
+    border-width: 1.5px;
+    border-color: aliceblue;   
+    border-style: dashed;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .conquistas_table{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .bloco_conquista{
+        font-size: small;
+        width: 100px;
+        height: 25px;
+        padding: 10px;
+        margin-top: 5px;
     }
 }
 
@@ -120,3 +232,15 @@ footer{
 footer a{
     cursor: pointer;
 }
+
+.ultimo_footer{
+    padding-right: 75px;
+    transition: 0.1s;
+}
+
+@media (max-width: 768px) {
+    .ultimo_footer{
+        padding-right: 50px;
+    }
+}
+
